@@ -63,6 +63,7 @@
 									<directory>${basedir}/docker</directory>
 									<includes>
 										<include>Dockerfile</include>
+										<include>entrypoint.sh</include>
 										<include>apache/*.*</include>
 									</includes>
 								</resource>
