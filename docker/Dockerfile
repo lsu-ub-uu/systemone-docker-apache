@@ -1,7 +1,7 @@
 FROM httpd:2
 
+# Add reverse proxy conf
 COPY apache/systemone-proxy-vhosts.conf /usr/local/apache2/conf/extra/systemone-proxy-vhosts.conf
-
 RUN echo "Include conf/extra/systemone-proxy-vhosts.conf\n" \
     >> /usr/local/apache2/conf/httpd.conf
 
