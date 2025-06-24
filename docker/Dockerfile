@@ -1,8 +1,8 @@
 FROM httpd:2
 
-COPY apache/apache.conf /usr/local/apache2/conf/extra/proxy-vhost.conf
+COPY apache/systemone-proxy-vhosts.conf /usr/local/apache2/conf/extra/systemone-proxy-vhosts.conf
 
-RUN echo "Include conf/extra/proxy-vhost.conf\n" \
+RUN echo "Include conf/extra/systemone-proxy-vhosts.conf\n" \
     >> /usr/local/apache2/conf/httpd.conf
 
 # Expose HTTP port
