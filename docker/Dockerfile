@@ -1,11 +1,12 @@
 FROM httpd:2
 
-COPY apache/*.conf /usr/local/apache2/conf/extra/
+# Add reverse proxy conf
+COPY apache/systemone-proxy-vhosts.conf /usr/local/apache2/conf/extra/systemone-proxy-vhosts.conf
+RUN echo "Include conf/extra/systemone-proxy-vhosts.conf" \
+    >> /usr/local/apache2/conf/httpd.conf
 
-COPY entrypoint.sh /usr/local/bin/entrypoint.sh
-RUN chmod +x /usr/local/bin/entrypoint.sh
-
+# Expose HTTP port
 EXPOSE 80
 
-ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
+# Run Apache in the foreground
 CMD ["httpd-foreground"]
