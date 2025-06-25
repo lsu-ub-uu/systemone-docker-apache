@@ -27,7 +27,7 @@
 		<version>1.1.0</version>
 	</parent>
 
-	<artifactId>cora-docker-apache</artifactId>
+	<artifactId>systemone-docker-apache</artifactId>
 	<packaging>pom</packaging>
 	<version>1.0-SNAPSHOT</version>
 	<name>Cora docker for Apache</name>
