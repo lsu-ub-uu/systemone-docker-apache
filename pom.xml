@@ -45,7 +45,6 @@
 		<tag>HEAD</tag>
 	</scm>
 	
-	
 	<dependencies>
 		<dependency>
 			<groupId>se.uu.ub.cora</groupId>
