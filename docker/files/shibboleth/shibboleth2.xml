@@ -47,7 +47,7 @@
 
     <MetadataProvider type="MDQ" id="mdq.swamid.se" ignoreTransport="true" cacheDirectory="mdq.swamid.se"
                       baseUrl="https://mds.swamid.se/">
-      <MetadataFilter type="Signature" certificate="md-signer2.crt"/>
+      <MetadataFilter type="Signature" certificate="credentials/md-signer2.crt"/>
       <MetadataFilter type="RequireValidUntil" maxValidityInterval="2419200"/>
     </MetadataProvider>
 
@@ -61,9 +61,9 @@
     <AttributeFilter type="XML" validate="true" path="attribute-policy.xml"/>
 
     <CredentialResolver type="File" use="signing"
-                        key="sign-key.pem" certificate="sign-cert.pem"/>
+                        key="credentials/sign-key.pem" certificate="credentials/sign-cert.pem"/>
     <CredentialResolver type="File" use="encryption"
-                        key="enc-key.pem" certificate="enc-cert.pem"/>
+                        key="credentials/enc-key.pem" certificate="credentials/enc-cert.pem"/>
 
   </ApplicationDefaults>
 
