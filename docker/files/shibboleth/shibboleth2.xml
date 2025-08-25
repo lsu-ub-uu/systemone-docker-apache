@@ -6,7 +6,7 @@
           clockSkew="180">
 
   <ApplicationDefaults id="default"
-	               entityID="https://pre.diva-portal.org/shibboleth"
+	               entityID="{SHIBBOLETH_ENTITY_ID}"
 	               REMOTE_USER="subject-id eppn pairwise-id persistent-id"
 	               cipherSuites="DEFAULT:!EXP:!LOW:!aNULL:!eNULL:!DES:!IDEA:!SEED:!RC4:!3DES:!kRSA:!SSLv2:!SSLv3:!TLSv1:!TLSv1.1"
                        metadataAttributePrefix="Meta-">
