@@ -12,7 +12,7 @@ RUN echo "Include conf/extra/systemone-proxy-vhosts.conf" \
 COPY files/shibboleth/* /etc/shibboleth/	
 
 # Replace placeholder with the build arg
-RUN sed -i "s|{SHIBBOLETH_ENTITY_ID}|${SHIBBOLETH_ENTITY_ID_ARG}|g" /etc/shibboleth/shibboleth2.xml
+RUN sed -i "s|{SHIBBOLETH_ENTITY_ID}|${SHIBBOLETH_ENTITY_ID_ARG}|g" /etc/shibboleth/whatEverItWillBeDeleted.xml
 
 # Run Apache in the foreground
 CMD ["supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
