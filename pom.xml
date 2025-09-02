@@ -27,7 +27,7 @@
 
 	<artifactId>systemone-docker-apache</artifactId>
 	<packaging>pom</packaging>
-	<version>1.4-SNAPSHOT</version>
+	<version>1.5-SNAPSHOT</version>
 	<name>Systemone docker for Apache</name>
 
 	<properties>
